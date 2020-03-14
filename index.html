@@ -1,58 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
 
-    <title>Charlie Bayne</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  </head>
-<body class="index">
-  <nav class="navbar navbar-expand-md navbar-fixed-top">
-    <a class="navbar-brand" href="#">CB</a>
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="main-navigation">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="resume.html">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/LS_2.JPG');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url('images/CB_1.jpg');
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url('images/CB_2.jpg');
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+.col-sm-3 {
+  width: 30%;
+  float: left;
+}
+.col-sm-5{
+  width: 40%;
+  float: right;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> RESUME</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="images/CB_1.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
-  </nav>
-  <div class="container main">
 
-    <div class="row">
-      <div class="col-sm-3">
-        <img src="images/profile.png" class="img-responsive img-circle center" width="100%">
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website! My name is Charlie and I am a biologist at Kaleido Biosciences where I work on developing theraputics that can have an impact on human health by modulating the gut microbiome. </p>
+    </div>
+    <br>
+    <p> It is really exciting to go to work each day as a researcher aiming to make discoveries to improving human health.
+    When I am at work, I am most interested in developing creative and practical solutions to fix problems and discover something new. Relatedly, I like to continuously learn and expand my field of expertise.
+    Recently, I have been really interested in learning at data science. As a biologist, I think that traditionally taught methods of analyzing data are not adequate to deal with the increased volume and dimensionality of datasets that has come with advancing technology.
+    Discovering something unknown about how a biological system works by analyzing data is the greatest part of being a biologist in my opinion. If we as biologists don't expand our toolsets, It seems apparent to me that we will become farther removed from making these discoveries ourselves.
+    In order to best be able to continue to make meaningfull discoveries, I have been teaching my self to program. You can check out a few publically avalible projects at my <a href="https://github.com/baynec2">github repo</a>.
+
+
+    <p class="w3-center"><em>Outside of work</em></p>
+
+    <p> I love to travel, some of my favoite places that I have been to so far include: </p>
+      <ul>
+        <li>Barcelona</li>
+        <li>Park City, UT</li>
+        <li>The Great Sand Dunes,CO</li>
+        <li>North Carolina Beaches</li>
+        <li>Mallorca</li>
+        <li>Shenedoah National Park</li>
+    </ul>
+    <p> I seem to have an appetite for unique adventures, ones that seem to require a lot of convincing to get my friends to join me on. A recent examples include visiting islands miles off of the coast of Massachusetts in a $90 inflatable raft. <br>
+      I love long distance running, although I seem to be doing a lot less of that now that I am not on the cross country team at Dickinson College anymore. <br>
+      I enjoy skiing, snowboarding, backpacking, cycling, and a ton of other fun outdoor stuff. <br>
+    </p>
+    <div class="w3-content w3-container w3-padding-64" id="PHOTOS">
+      <h3 class="w3-center">PHOTOS</h3>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center" id ="photos">
+
+    <div class="w3-col m3">
+      <img src="images/IMG_001.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing on the Charles in Boston">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/IMG_008.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gabby in Mallorca">
+    </div>
+
+      <div class="w3-col m3">
+        <img src="images/IMG_002.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The end of our ~150 mile bike ride from Boston to Provincetown">
       </div>
-      <div class="col-sm-5">
-        <h1>About Me</h1>
-        <p>I'm a biologist at <a href="https://kaleido.com/">Kaleido Biosciences </a>, where I work on developing theraputics that can have an impact on human health by modulating the gut microbiome </p>
-        <p> This site is under development as I learn how to code it, so if something isn't working - I haven't quite figured that out yet. Come back later! </p>
+
+      <div class="w3-col m3">
+        <img src="images/IMG_019.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nick and I">
       </div>
-      <div class="col-sm-4">
-        <h2>Contact Information</h2>
-        <p>baynec2@gmail.com<br>
-        I live in Medford, MA
+
+      <div class="w3-col m3">
+        <img src="images/IMG_010.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A great day in Barcelona">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/IMG_007.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Beautiful fall leaves in Cambridge, MA">
+      </div>
+    <div class="w3-col m3">
+      <img src="images/IMG_014.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Looking of a cliff in Mallorca">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/IMG_012.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Us in Boulder Colorado!">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/IMG_011.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Arches national park, UT">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/IMG_005.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fun day in the sun at Martha's vineyard">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/LS_1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The sunset on Misery island prior to camping but after taking on the sea in my inflatable boat">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/IMG_018.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The view of Boston from spectacle island">
+    </div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<div class="w3-large w3-margin-bottom" id = "contact">
+  <h3 class="w3-center">CONTACT</h3>
+<div class="row">
+  <div class="w3-center">
+    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Medford, MA<br>
+    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 540-308-0528 <br>
+    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: baynec2@gmail.com<br>
+  </div>
+  <div class="w3-center">
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94337.45948831813!2d-71.15591886129425!3d42.36286726252242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37692aa27d0e5%3A0xfa42075a2556c01e!2sWest%20Medford%2C%20Medford%2C%20MA%2002155!5e0!3m2!1sen!2sus!4v1583190913842!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
   </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 </html>
