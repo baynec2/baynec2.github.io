@@ -51,7 +51,21 @@ body, html {
   width: 40%;
   float: right;
 }
-
+.w3-wide {
+  letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -99,32 +113,31 @@ body, html {
     </div>
 
     <div class="w3-col m6 w3-padding-large">
-      <p>Welcome to my website! My name is Charlie and I am a biologist at Kaleido Biosciences where I work on developing theraputics that can have an impact on human health by modulating the gut microbiome. </p>
+      <p>Welcome to my website! My name is Charlie and I am a biologist at Kaleido Biosciences where I work on developing therapeutics that can have an impact on human health by modulating the gut microbiome. </p>
     </div>
     <br>
     <p> It is really exciting to go to work each day as a researcher aiming to make discoveries to improving human health.
-    When I am at work, I am most interested in developing creative and practical solutions to fix problems and discover something new. Relatedly, I like to continuously learn and expand my field of expertise.
-    Recently, I have been really interested in learning at data science. As a biologist, I think that traditionally taught methods of analyzing data are not adequate to deal with the increased volume and dimensionality of datasets that has come with advancing technology.
-    Discovering something unknown about how a biological system works by analyzing data is the greatest part of being a biologist in my opinion. If we as biologists don't expand our toolsets, It seems apparent to me that we will become farther removed from making these discoveries ourselves.
-    In order to best be able to continue to make meaningfull discoveries, I have been teaching my self to program. You can check out a few publically avalible projects at my <a href="https://github.com/baynec2">github repo</a>.
+    When I am at work, I am most interested in developing creative and practical solutions to fix problems and discover something new. I like to continuously learn and expand my field of expertise.
+    Recently, I have been really interested in expanding my data science skills. I think that the methods of analyzing data that are traditionally taught to biologists are not adequate to deal with the increased volume and dimensionality of datasets that has come with advancing technology.
+    Discovering something unknown about how a biological system works by analyzing data is the greatest part of being a biologist in my opinion. If we as biologists don't expand our toolsets, it seems apparent to me that we will become farther removed from making these discoveries ourselves.
+    In order to best be able to continue to make meaningful discoveries, I have been teaching myself to program. You can check out a few publicly available projects at my <a href="https://github.com/baynec2">github</a>.
 
-
-    <p class="w3-center"><em>Outside of work</em></p>
-
-    <p> I love to travel, some of my favoite places that I have been to so far include: </p>
+    <p> I love to travel, and some of my favorite places that I have been to so far include: </p>
       <ul>
         <li>Barcelona</li>
         <li>Park City, UT</li>
         <li>The Great Sand Dunes,CO</li>
         <li>North Carolina Beaches</li>
         <li>Mallorca</li>
-        <li>Shenedoah National Park</li>
+        <li>Shenandoah National Park</li>
     </ul>
-    <p> I seem to have an appetite for unique adventures, ones that seem to require a lot of convincing to get my friends to join me on. A recent examples include visiting islands miles off of the coast of Massachusetts in a $90 inflatable raft. <br>
+    <p> I seem to have an appetite for unique adventures, ones that seem to require a lot of convincing to get my friends to join me on. A recent example includes visiting islands miles off of the coast of Massachusetts in a $90 inflatable raft. <br>
       I love long distance running, although I seem to be doing a lot less of that now that I am not on the cross country team at Dickinson College anymore. <br>
       I enjoy skiing, snowboarding, backpacking, cycling, and a ton of other fun outdoor stuff. <br>
     </p>
-    <div class="w3-content w3-container w3-padding-64" id="PHOTOS">
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="PHOTOS">
       <h3 class="w3-center">PHOTOS</h3>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center" id ="photos">
@@ -176,6 +189,7 @@ body, html {
       <img src="images/IMG_018.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The view of Boston from spectacle island">
     </div>
 </div>
+</div>
 
 
 
@@ -196,12 +210,23 @@ body, html {
     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 540-308-0528 <br>
     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: baynec2@gmail.com<br>
   </div>
-  <div class="w3-center">
-    <div class="map-responsive">
+  <div class="w3-center w3-hide-small map-responsive">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94337.45948831813!2d-71.15591886129425!3d42.36286726252242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37692aa27d0e5%3A0xfa42075a2556c01e!2sWest%20Medford%2C%20Medford%2C%20MA%2002155!5e0!3m2!1sen!2sus!4v1583190913842!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
+  </div>
   </div>
 </div>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fas fa-dna w3-hover-opacity"></i>
+    <i class="fas fa-mountain w3-hover-opacity"></i>
+    <i class="fas fa-code w3-hover-opacity"></i>
+    <i class="fas fa-running w3-hover-opacity"></i>
+  </div>
+</footer>
 
 <script>
 // Modal Image Gallery
