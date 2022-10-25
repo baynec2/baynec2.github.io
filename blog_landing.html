@@ -19,23 +19,23 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="index.html/#home" class="w3-bar-item w3-button">HOME</a>
-      <a href="index.html/#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-      <a href="index.html/#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
-      <a href="index.html/#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="index.html#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="tutorial_landing.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> TUTORIALS</a>
       <a href="blog_landing.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> BLOG</a>
-      <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> RESUME</a>
+      <a href="cv.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> CV</a>
     </div>
   
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-      <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="index.html#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
       <a href="tutorial_landing.html" class="w3-bar-item w3-button"><i onclick="toggleFunction()"></i> TUTORIALS</a>
       <a href="blog_landing.html" class="w3-bar-item w3-button"><i onclick="toggleFunction()"></i> BLOG</a>
-      <a href="resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+      <a href="cv.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
   
     </div>
   </div>   
@@ -59,17 +59,23 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="blog/resources/roadkill_art.jpg" alt="AI generated roadkill art" style="width:50%">
+    <center><img src="blog/resources/roadkill_art.jpg" alt="AI generated roadkill art" style="width:50%"></center>
     <div class="w3-container">
       <h3><b>Higher education, roadkill, and a totaled car </b></h3>
       <h5>What do these things have in common? Answer: me as a sophmore at Dickinson College. <span class="w3-opacity">Spring, 2013 </span></h5>
     </div>
 
     <div class="w3-container">
-      <p> Check back soon. Its a doozy of a story.</p>
+      <p> I looked on in disbelief. In the front of the class, one of my classmates was holding a completely
+        flattened squirrel by its tail. From the looks of it, it had been completely squashed by a large truck,
+        possibly even an 18-wheeler. I took a quick look around to survey my classmates. Everyone else seemed
+        quite awestruck too, but somehow no one had the audacity to bring it to the professor’s attention that
+        this was an insane thing for someone to be doing. It was the second day of my first upper-level biology
+        class at Dickinson College, a class called A Natural History of Vertebrates. I didn’t know it then, but
+        the class was going to get a lot weirder from there.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <a href="blog/a_natural_history_of_vertebrates.html"class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b> </a>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -81,7 +87,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-<img src="blog/resources/IMG_0672 2.JPG" alt="Sunset at Misery Island" style="width:50%">
+<center><img src="blog/resources/IMG_0672 2.JPG" alt="Sunset at Misery Island" style="width:50%">></center>
 <!-- <video controls="controls" width="400" height="250" name="The voyage"><source src= "blog/resources/misery_island.mov"> </video> -->
     <div class="w3-container">
       <h3><b>Misery island was both incredible and miserable </b></h3>
@@ -107,7 +113,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="blog/resources/profile_pic.jpeg" style="width:50%">
+  <center><img src="blog/resources/profile_pic.jpeg" style="width:50%"></center>
     <div class="w3-container w3-white">
       <h4><b>Charlie Bayne</b></h4>
       <p>Not even really sure what to say here.</p>
