@@ -1,0 +1,286 @@
+<html>
+  <title>Stuff I made</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <!DOCTYPE html>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+    crossorigin="anonymous"
+  />
+  <!-- Load font awesome icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("images/Canyonlands.jpeg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("images/CB_1.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("images/CB_2.jpg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+
+    .col-sm-3 {
+      width: 30%;
+      float: left;
+    }
+    .col-sm-5 {
+      width: 40%;
+      float: right;
+    }
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      text-align: center;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> ABOUT</a
+        >
+        <a href="#photos" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th"></i> PHOTOS</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> CONTACT</a
+        >
+        <a
+          href="tutorial_landing.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-file"></i> TUTORIALS</a
+        >
+        <a href="blog_landing.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-file"></i> BLOG</a
+        >
+        <a href="cv.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-file"></i> CV</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >ABOUT</a
+        >
+        <a
+          href="#photos"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CONTACT</a
+        >
+        <a href="tutorial_landing.html" class="w3-bar-item w3-button"
+          ><i onclick="toggleFunction()"></i> TUTORIALS</a
+        >
+        <a href="blog_landing.html" class="w3-bar-item w3-button"
+          ><i onclick="toggleFunction()"></i> BLOG</a
+        >
+        <a
+          href="cv.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CV</a
+        >
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home"></div>
+
+    <!-- Container -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center"><em>3D Printing</em></h3>
+      <div class="w3-left">
+        <p>
+          I have recently been getting interested in 3D printing. I have an
+          <a href="https://www.anycubic.com/products/anycubic-vyper">
+            Anycubic Vyper 3d printer</a
+          >, and I have been very impressed with the technology.
+        </p>
+        <p>
+          I like to use 3D printing to make devices that make my life easier in
+          the lab. So far, I have mostly made stands to support various
+          workflows, I intend to continue to design and publish useful things as
+          they come up. You can find my designs published
+          <a href="https://www.thingiverse.com/baynec2/designs"> here</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Container -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center"><em>Software</em></h3>
+      <div class="w3-left">
+        <p>
+          I have created a few differnt software packages that I have found to
+          be useful. These are mostly in the form of R packages designed to help
+          with data analysis. You can find all of these hosted on my<a href="https://github.com/baynec2/"> github </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Container -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center"><em>Web Apps</em></h3>
+      <div class="w3-left">
+        <p>
+          I have created a couple pretty simple web apps. I usually use R shiny to
+          create them. Most of them aren't useful enough to publish, but here are ones that I thought were cool.
+        </p>
+        <p>
+          Wordflock is an app that lets you make a word cloud from tweets of a
+          given user. Sometimes it is interesting to see what words are most
+          often on the mind of a notable public figure, or even just a friend.
+          You can find it
+          <a href="https://charliebayne.shinyapps.io/Wordflock/">here</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-dna w3-hover-opacity"></i>
+        <i class="fa fa-mountain w3-hover-opacity"></i>
+        <i class="fa fa-code w3-hover-opacity"></i>
+        <i class="fa fa-running w3-hover-opacity"></i>
+      </div>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
