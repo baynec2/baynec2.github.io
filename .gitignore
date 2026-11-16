@@ -1,0 +1,7 @@
+.DS_Store
+_mockups/
+# full-size originals kept locally; the site uses the web-sized copies
+images/dji_fly_*
+images/*.HEIC
+images/IMG_2548.png
+images/Gemini_Generated_Image_*

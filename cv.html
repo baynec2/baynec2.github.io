@@ -1,52 +1,189 @@
 <!DOCTYPE html>
-<html>
-<title>CV</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
-</style>
-<body>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="index.html#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="tutorial_landing.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> TUTORIALS</a>
-    <a href="blog_landing.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> BLOG</a>
-    <a href="cv.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> CV</a>
-  </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | Charlie Bayne</title>
+  <meta name="description" content="Curriculum vitae of Charlie Bayne: proteomics and metaproteomics software, microbiome research, publications.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap">
+  <meta name="theme-color" content="#07121d">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="index.html#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="tutorial_landing.html" class="w3-bar-item w3-button"><i onclick="toggleFunction()"></i> TUTORIALS</a>
-    <a href="blog_landing.html" class="w3-bar-item w3-button"><i onclick="toggleFunction()"></i> BLOG</a>
-    <a href="cv.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> CV</a>
-  </div>
+<div class="wrap">
+<header class="site-header">
+  <a class="site-name" href="index.html">Charlie Bayne</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html#about">About</a>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#made">Made</a>
+    <a href="index.html#stories">Stories</a>
+    <a href="cv.html" aria-current="page">CV</a>
+  </nav>
+</header>
 </div>
 
-<object data="resources/CV.pdf" type="application/pdf" width="100%" height="800px">
-  <p>It appears you don't have a PDF plugin for this browser.
-   No biggie... you can <a href="CV.pdf">click here to
-  download the PDF file.</a></p>
-  </object>
+<main id="main" class="wrap">
+  <div class="page-head">
+    <h1>Charlie Bayne</h1>
+    <p class="no-print">Scientist building open-source software for proteomics and metaproteomics.</p>
+    <button class="button no-print" type="button" onclick="window.print()">Save as PDF</button>
+    <p class="print-only small">baynec2@gmail.com, github.com/baynec2, linkedin.com/in/charlie-bayne-73358565, baynec2.github.io</p>
+  </div>
 
+  <section class="section">
+    <h2>Education</h2>
+    <div class="body">
+      <div class="cv-block">
+        <div class="cv-row"><h3>PhD, Biomedical Sciences</h3><span class="when">2021 to present</span></div>
+        <div>University of California San Diego, Gonzalez Lab</div>
+      </div>
+      <div class="cv-block">
+        <div class="cv-row"><h3>BS, Biochemistry and Molecular Biology</h3><span class="when">2011 to 2015</span></div>
+        <div>Dickinson College, Carlisle, PA. <i>Magna cum laude</i>; David A. Baram Prize for Excellence in Molecular Biology.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Research</h2>
+    <div class="body">
+      <div class="cv-block">
+        <div class="cv-row"><h3>Graduate researcher, UC San Diego</h3><span class="when">2021 to present</span></div>
+        <ul>
+          <li>Built <a href="https://github.com/baynec2/conduit-ascent">Conduit</a>, an open-source DIA metaproteomics ecosystem: a Snakemake workflow that scales from one machine to SLURM clusters, a cross-platform desktop launcher, a Shiny analysis app and an R package.</li>
+          <li>Wrote and published <a href="https://bioconductor.org/packages/mspms">mspms</a>, a Bioconductor package and Shiny app for protease substrate profiling by mass spectrometry.</li>
+          <li>Led a plasma proteomics and metabolomics study of enterococcal bacteremia (105 samples), finding host-response signatures of infection type and survival; first author in <i>mSystems</i>.</li>
+          <li>Automated mass spectrometer quality control with FragPipe, SQLite and a Shiny dashboard.</li>
+          <li>Set up the lab’s Oxford Nanopore sequencing, including the basecalling workstation and a bacterial genome assembly protocol.</li>
+        </ul>
+      </div>
+      <div class="cv-block">
+        <div class="cv-row"><h3>Kaleido Biosciences, Lexington, MA</h3><span class="when">2016 to 2021</span></div>
+        <div class="meta">Senior Research Associate (2020 to 2021), Research Associate II (2018 to 2020), Research Associate (2016 to 2018)</div>
+        <ul>
+          <li>Developed therapeutics designed to modulate the gut microbiome, working in multidisciplinary teams on new indication areas.</li>
+          <li>Extended Kaleido’s <i>in vitro</i> screening platform for higher throughput and richer data, and wrote the R package (<a href="https://github.com/baynec2/phgrofit">phgrofit</a>) to model kinetic pH and OD600 curves at scale.</li>
+          <li>Analysed shallow shotgun sequencing, 16S rRNA sequencing and kinetic plate reader data in R and Tableau.</li>
+          <li>Adapted flow cytometry for targeted study of the microbiome, and ran 16S rRNA gene sequencing on Illumina MiSeq from DNA extraction onward.</li>
+        </ul>
+      </div>
+      <div class="cv-block">
+        <div class="cv-row"><h3>University of Virginia, Charlottesville, VA</h3><span class="when">2015 to 2016</span></div>
+        <div class="meta">Laboratory Technician II, Derré Lab</div>
+        <ul>
+          <li>Ran a high-content microscopy screen for host genes needed in the <i>Chlamydia trachomatis</i> developmental cycle, and contributed experiments to two publications.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <h2>Publications</h2>
+    <div class="body">
+      <ol class="pubs">
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1186/s12859-026-06373-8">mspms: an R package and GUI for multiplex substrate profiling by mass spectrometry</a>
+            <span class="cite"><span class="me">Bayne C</span>, Hurysz B, Gonzalez DJ, O’Donoghue AJ. <i>BMC Bioinformatics</i> 27, 51 (2026)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1128/msystems.01471-24">Multi-omic signatures of host response associated with presence, type, and outcome of enterococcal bacteremia</a>
+            <span class="cite"><span class="me">Bayne C</span>, McGrosso D, Sanchez C, Rossitto L-A, Patterson M, Gonzalez C, Baus C, Volk C, Zhao HN, Dorrestein P, Nizet V, Sakoulas G, Gonzalez DJ, Rose W. <i>mSystems</i> 10(2) (2025). Cover article; cover art by C. Bayne.</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1128/msystems.00992-24">L-tryptophan and copper interactions linked to reduced colibactin genotoxicity in <i>pks+ Escherichia coli</i></a>
+            <span class="cite"><span class="me">Bayne C</span>, Boutard M, Zaplana T, Tolonen AC. <i>mSystems</i> 9, e00992-24 (2024)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1038/s41467-022-28856-x">Synthetic glycans that control gut microbiome structure mitigate colitis in mice</a>
+            <span class="cite">Tolonen AC, Beauchemin N, <span class="me">Bayne C</span>, Tan J, Meehan B, Meisner J, Millet Y, Li L, LeBlanc G, Lee J, Murphy C, Turnbaugh P, von Maltzahn G, Liu C, van Hylckama Vlieg J. <i>Nature Communications</i> 13, 1244 (2022)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1101/2022.04.04.487010">Modulation of the gut microbiome by novel synthetic glycans for the production of propionate and the reduction of cardiometabolic risk factors</a>
+            <span class="cite">Millet YA, Meisner J, Tan J, et al., <span class="me">Bayne C</span>, et al. <i>bioRxiv</i> preprint (2022)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1371/journal.pone.0217753"><i>Chlamydia trachomatis</i> and <i>Chlamydia muridarum</i> spectinomycin resistant vectors and a transcriptional fluorescent reporter to monitor conversion from replicative to infectious bacteria</a>
+            <span class="cite">Cortina ME, Ende RJ, Bishop RC, <span class="me">Bayne C</span>, Derré I. <i>PLoS ONE</i> 14(6) (2019)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1016/j.virol.2018.05.010">SELEX and SHAPE reveal that sequence motifs and an extended hairpin in the 5’ portion of Turnip crinkle virus satellite RNA C mediate fitness in plants</a>
+            <span class="cite"><span class="me">Bayne CF</span>, Widawski ME, Gao F, et al., Kushner DB. <i>Virology</i> 520 (2018)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="title" href="https://doi.org/10.1073/pnas.1709060114">IncV, a FFAT motif-containing <i>Chlamydia</i> protein, tethers the endoplasmic reticulum to the pathogen-containing vacuole</a>
+            <span class="cite">Stanhope R, Flora E, <span class="me">Bayne C</span>, Derré I. <i>PNAS</i> 114(45) (2017)</span></article>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Posters</h2>
+    <div class="body">
+      <ol class="pubs">
+        <li>
+          <article class="card">
+            <span class="title">Chemical modulation of the gut microbiome alleviates chemotherapy-induced toxicity</span>
+            <span class="cite">Liu C, Yatsunenko T, Jose A, Mahowald M, Beauchemin N, <span class="me">Bayne C</span>, et al. Keystone Symposia, Microbiome: Therapeutic Implications (2019)</span></article>
+        </li>
+        <li>
+          <article class="card">
+            <span class="title">High-throughput <i>in vitro</i> system to test compound effects on the human microbiome</span>
+            <span class="cite"><span class="me">Bayne C</span>, Jose A, Yatsunenko T, Conrad M, Konopnicki C, Leff J, Tan J, Beauchemin N. Beneficial Microbes Conference (2018)</span></article>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Writing</h2>
+    <div class="body">
+      <ol class="pubs">
+        <li>
+          <a class="title" href="https://ucsdbiomed.wordpress.com/sobremesas/">A Natural History of Vertebrates</a>
+          <span class="cite"><span class="me">Bayne C</span>. Short story series, parts 1 and 2. <i>sobremesas</i>, UC San Diego Biomedical Sciences literary magazine, Winter and Summer 2024</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="body">
+      <div class="cv-block">
+        <h3>Computational</h3>
+        <p>R (Bioconductor, Shiny, package development), Python, Snakemake, Docker and Apptainer, SLURM, Git, SQLite, DIA-NN, FragPipe, Linux server administration.</p>
+      </div>
+      <div class="cv-block">
+        <h3>Laboratory</h3>
+        <p>Mass spectrometry proteomics, assay development, Illumina and Nanopore sequencing, flow cytometry, anaerobic microbiology, qPCR, molecular cloning, tissue culture, high-content microscopy, 3D printing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>
+      <li><a href="mailto:baynec2@gmail.com">baynec2@gmail.com</a></li>
+      <li><a href="https://github.com/baynec2">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/charlie-bayne-73358565">LinkedIn</a></li>
+    </ul>
+</div>
+</footer>
 </body>
 </html>
